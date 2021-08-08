@@ -19,11 +19,11 @@ class Human
   end
   
 
-man_one = Human.new
-man_two = Human.new
-puts man_one.attack(man_two)
-puts man_one.attack("Not a Human")
-puts man_two.health
+# man_one = Human.new
+# man_two = Human.new
+# puts man_one.attack(man_two)
+# puts man_one.attack("Not a Human")
+# puts man_two.health
 
   
   
