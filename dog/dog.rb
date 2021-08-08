@@ -4,19 +4,19 @@ class Dog < Mammal
 
     def pet
         @health += 5
-        # puts increase
+        # puts @health
         self
     end
 
     def walk
         @health += 1
-        # puts increase
+        # puts @health
         self
     end
 
     def run
         @health -= 10
-        # puts decrease
+        # puts @health
         self
     end
 
