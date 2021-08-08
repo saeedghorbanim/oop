@@ -23,5 +23,8 @@ class Dog < Mammal
 end 
 
 dog = Dog.new
+# dog.pet
+# dog.walk
+# dog.run
 dog.display_health
 dog.walk.walk.walk.run.run.pet.display_health
