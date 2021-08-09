@@ -4,15 +4,12 @@ class Ninja < Human
 
     def initialize
         @stealth = 175
+        super
     end
 
     def steal(obj)
-        if.obj.class.ancestors.include?(Human)
-            Ninja.health += 10
-            true
-          else
-            false
-        end
+        attack(obj)
+        @health += 10
     end
 
     def get_away

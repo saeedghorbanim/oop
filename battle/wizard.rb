@@ -3,9 +3,14 @@ require_relative 'human'
 class Wizard < Human 
 
     def initialize
+        super
         @health = 50
         @intelligence = 25
     end
+
+    def heal
+        @heal += 10
+    end 
 
     def fireball(obj)
         if obj.class.ancestors.include?(Human)
@@ -20,5 +25,5 @@ class Wizard < Human
 
 end
 
-magic = Wizard.new
-magic.fireball
+# magic = Wizard.new
+# magic.fireball
