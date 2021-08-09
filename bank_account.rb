@@ -34,6 +34,7 @@ class BankAccount
         end
     end
 
+    
     def withdraw(account, withdraw_amount)
         if account == "checking"
             if @checking == 0 
@@ -50,11 +51,13 @@ class BankAccount
         end
     end 
 
+
     def total
         puts "your checking account is: #{@checking}"
         puts "your saving account is: #{@saving}"
         puts "total balance is: #{@checking + @saving}"
     end 
+
 
     def account_information
         puts "User account number is: #{@account_num}"
@@ -62,6 +65,7 @@ class BankAccount
         puts "checking account: #{@checking} and saving account: #{@saving}"
         puts "total interest rate #{@interest}"
     end
+
 
     def total_bank_accounts
         @@bankAccounts
@@ -76,6 +80,6 @@ end
 
 user = BankAccount.new
 user.total
-user.deposit(checking, 150)
-user.deposit(saving, 275)
+user.deposit("checking", 150)
+user.deposit("saving", 275)
 user.account_information
